@@ -10,7 +10,7 @@ defmodule Practice.Factor do
 
   def factor(x, n) when n * n <= x do
     case rem x, n do
-      0 -> [n | factor(div(x, n), 2)]
+      0 -> [n | factor(div(x, n), n)]
       _ -> factor(x, n + 1)
     end
   end
