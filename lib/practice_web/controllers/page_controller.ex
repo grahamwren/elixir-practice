@@ -17,7 +17,8 @@ defmodule PracticeWeb.PageController do
   end
 
   def factor(conn, %{"x" => x}) do
-    y = Practice.factor(x)
+    {:ok, num} = Practice.Factor.parse_int x
+    y = Practice.factor(num)
     render conn, "factor.html", x: x, y: y
   end
 
