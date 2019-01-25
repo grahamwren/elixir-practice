@@ -1,0 +1,7 @@
+<div class="row">
+  <div class="column">
+    <p><%= link "← go back", to: "/" %></p>
+    <h2>Palindrome?</h2>
+    <h4><%= if @pal?, do: "Yes", else: "No :(" %></h4>
+  </div>
+</div>
