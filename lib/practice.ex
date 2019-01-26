@@ -19,4 +19,6 @@ defmodule Practice do
   def factor(x) do
     Practice.Factor.factor(x)
   end
+
+  def pal(s), do: s |> String.reverse |> Kernel.==(s)
 end

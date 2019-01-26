@@ -6,7 +6,7 @@ defmodule Practice.Factor do
     end
   end
 
-  def factor(x) do factor(x, 2) end
+  def factor(x), do: factor(x, 2)
 
   def factor(x, n) when n * n <= x do
     case rem x, n do
@@ -15,5 +15,5 @@ defmodule Practice.Factor do
     end
   end
 
-  def factor(x, _n) do [x] end
+  def factor(x, _), do: [x]
 end
